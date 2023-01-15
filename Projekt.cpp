@@ -8,8 +8,11 @@ int main() {
     cout << "Podaj b: ";
     cin >> b;
 
-    if (a == 0) {
-        cout << "Funkcja jest liniowo zale¿na, nie ma miejsc 0.";
+ if (a == 0) {
+        if(b == 0) 
+            cout << "Funkcja posiada nieskoñczenie wiele miejsc 0.";
+        else
+            cout << "Funkcja nie posiada miejsc 0.";
     }
     else {
         double x = -b/a;
