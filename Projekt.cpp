@@ -13,7 +13,16 @@ int main() {
 
    
     if (a == 0) {
-        cout << "To nie jest funkcja kwadratowa!";
+    	        if(b == 0) {
+            if(c == 0) 
+                cout << "Funkcja jest to¿sama z 0, ma nieskoñczenie wiele miejsc zerowych.";
+            else
+                cout << "Funkcja jest liniowo zale¿na, nie ma miejsc zerowych.";
+        }
+        else {
+            double x = -c/b;
+            cout << "Funkcja jest liniowa, miejsce zerowe funkcji to: " << x;
+        }
     }
     else {
         double delta = b*b - 4*a*c;
